@@ -1,0 +1,81 @@
+* {
+    direction: rtl;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: whitesmoke;
+    margin: 0;
+}
+body {
+    background-color: #a9a9a9;
+    background-size: cover;
+    background-attachment: fixed;
+}
+html{
+    height: 100vh;
+}
+p {
+    white-space: pre;
+}
+.subtitle {
+    padding-right: 24px;
+}
+.tira-img {
+    /*margin: 0;*/
+    height: 60px;
+    width: 50px;
+    padding: 10px;
+}
+.topnavbar {
+    background-color: #20333c;
+}
+#navbarmain {
+    display: flex;
+}
+#bigtitle {
+    margin-top: 30;
+}
+.main-headers {
+    font: 'Segoe UI'; /* is it the font? */
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.main-headers div{
+    display: flex;
+    width: 100%;
+    height: 4px;
+    background: lightgray;
+    margin-right: 24px;
+}
+ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+/* .grid {
+display: grid;
+grid-template-columns: repeat(7, 1fr);
+grid-template-rows: 1fr;
+grid-column-gap: px;
+grid-row-gap: 0px;
+} */
+/* .main-headers-txt::after {
+    display: inline-flex;
+    content: "";
+    height: 4px;
+    background: lightgray;
+    width: 82%;
+    top: 50%;
+    margin-right: 10px;
+    justify-content: space-between;
+} */
+#footer-style {
+    padding-right: 24px;
+    padding-bottom: 32px;
+    font-size: smaller;
+    position:absolute;
+    bottom:0;
+}
