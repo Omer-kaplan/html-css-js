@@ -55,13 +55,14 @@ ul{
     flex-direction: row;
     justify-content: space-evenly;
 }
-/* .grid {
+.new {
 display: grid;
-grid-template-columns: repeat(7, 1fr);
-grid-template-rows: 1fr;
+grid-template-columns: repeat(7, 2fr);
+grid-template-rows: 2fr;
 grid-column-gap: px;
 grid-row-gap: 0px;
-} */
+
+}
 /* .main-headers-txt::after {
     display: inline-flex;
     content: "";
