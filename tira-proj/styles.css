@@ -19,10 +19,9 @@ p {
     padding-right: 24px;
 }
 .tira-img {
-    /*margin: 0;*/
-    height: 60px;
-    width: 50px;
-    padding: 10px;
+    height: 56px;
+    width: 48px;
+    padding: 7px;
 }
 .topnavbar {
     background-color: #20333c;
@@ -31,10 +30,12 @@ p {
     display: flex;
 }
 #bigtitle {
-    margin-top: 30;
-}
+    padding: 3px;
+    width: 90px;
+    margin-top: 5px;
+ }
 .main-headers {
-    font: 'Segoe UI'; /* is it the font? */
+    font: 'Segoe UI';
     padding: 24px;
     display: flex;
     flex-direction: row;
