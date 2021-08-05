@@ -1,0 +1,72 @@
+{
+	"lastUsed": [
+		{
+			"type": "plan",
+			"title": "בדיקות מרשם"
+		},
+		{
+			"type": "pool",
+			"title": "מאגר"
+		},
+		{
+			"type": "digger",
+			"title": "דיגר עמר"
+		},
+		{
+			"type": "plan",
+			"title": "קפלן לחץ"
+		},
+		{
+			"type": "digger",
+			"title": "דיגדיגר"
+		},
+		{
+			"type": "atPlan",
+			"title": "בד.תכנון"
+		}
+	],
+		"mostPopular": [
+		{
+			"type": "sys",
+			"title": "קבוע מערכתי"
+		},
+		{
+			"type": "disc",
+			"title": "מור בדיקה"
+		},
+		{
+			"type": "office",
+			"title": "בדיקת OFFICE"
+		},
+		{
+			"type": "sys",
+			"title": "ניהול בקשות"
+		},
+		{
+			"type": "plan",
+			"title": "שירה בדיקה"
+		}
+	],
+		"recommanded": [
+		{
+			"type": "opRep",
+			"title": "דיווח מבצעי רצח"
+		},
+		{
+			"type": "ldr",
+			"title": "בום בום ופיו פיו"
+		},
+		{
+			"type": "discMgmt",
+			"title": "מאגר דיונים ותומכל"
+		},
+		{
+			"type": "pool",
+			"title": "מאגר נוסף"
+		},
+		{
+			"type": "atPlanPool",
+			"title": "מאגר פיו פיו ברבים"
+		}
+	]
+}

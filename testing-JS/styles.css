@@ -1,0 +1,148 @@
+* {
+    direction: rtl;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: whitesmoke;
+    margin: 0;
+}
+
+body {
+    background-color: #a9a9a9;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+html {
+    height: 100vh;
+}
+
+p {
+    white-space: pre;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.subtitle {
+    padding-right: 24px;
+    padding-top: 6px;
+    padding-bottom: 9px;
+}
+
+.tira-img {
+    height: 48px;
+    width: 48px;
+    padding: 7px;
+}
+
+.top-nav-bar {
+    background-color: #20333c;
+}
+
+.main-headers {
+    font: 'Segoe UI';
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.main-headers div {
+    display: flex;
+    width: 100%;
+    height: 3px;
+    background: lightgray;
+    margin-right: 24px;
+    margin-top: 3px;
+}
+
+.new {
+    display: grid;
+    grid-template-columns: repeat(7, 2fr);
+    grid-template-rows: 2fr;
+    grid-column-gap: px;
+    grid-row-gap: 0px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    margin-left: 100px; /* Not good */
+}
+
+.card {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 4px;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.material-icons {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.main-description {
+    color: black;
+    font-size: 12px;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    /* flex-wrap: wrap;
+    /* justify-content: flex-start;
+    margin-right: auto; */
+}
+
+/* .main-headers-txt::after {
+    display: inline-flex;
+    content: "";
+    height: 4px;
+    background: lightgray;
+    width: 82%;
+    top: 50%;
+    margin-right: 10px;
+    justify-content: space-between;
+} */
+
+#grid-elements {
+    display: grid;
+}
+
+#nav-bar-main {
+    display: flex;
+}
+
+#big-title {
+    padding: 3px;
+    width: 90px;
+    margin-top: 2px;
+}
+
+#footer-style {
+    padding-right: 24px;
+    padding-bottom: 32px;
+    font-size: smaller;
+    position: absolute;
+    bottom: 0;
+        /* display: flex;
+        flex-wrap: wrap; */
+}
