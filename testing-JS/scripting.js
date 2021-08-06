@@ -12,7 +12,6 @@ let listSimple = ['omer', 'Kaplan', 'infraDev', 'Adri', 'Mor'];
 // console.log(listSimple[0]) == omer
 listSimple.push('hahaLOL');
 
-
 let numList = [1,2,3,4,5,6];
 let indexer;
 for (indexer = 0; indexer < numList.length; indexer++)
