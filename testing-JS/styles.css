@@ -113,11 +113,13 @@ hr {
 
 .card::after {
     content: 'בתוקף'; 
-    right: -3px;
     padding: 0.5rem;
-    width: 6rem;
-    background-color: yellow;
+    width: 4rem;
+    background-color: transparent;
     color: darkred;
+    border-style: solid;
+    border-color: darkred;
+    border-width: thick;
     text-align: center;
     transform: rotate(-30deg);
     align-self: flex-start;

@@ -23,6 +23,14 @@
 		{
 			"type": "atPlan",
 			"title": "בד.תכנון"
+		},
+		{
+			"type": "pool",
+			"title": "מאגר"
+		},
+		{
+			"type": "digger",
+			"title": "דיגר עמר"
 		}
 	],
 		"mostPopular": [

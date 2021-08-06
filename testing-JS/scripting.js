@@ -40,6 +40,10 @@ var jsonFile = {"lastUsed": [
 		{
 			"type": "atPlan",
 			"title": "בד.תכנון"
+		},
+        {
+			"type": "plan",
+			"title": "קפלן לחץ"
 		}
 	],
 		"mostPopular": [
@@ -58,6 +62,14 @@ var jsonFile = {"lastUsed": [
 		{
 			"type": "sys",
 			"title": "ניהול בקשות"
+		},
+        {
+			"type": "disc",
+			"title": "מור בדיקה"
+		},
+		{
+			"type": "office",
+			"title": "בדיקת OFFICE"
 		},
 		{
 			"type": "plan",
@@ -121,8 +133,6 @@ var jsonFile = {"lastUsed": [
 		}
 	]
 };
-
-//  <div class="sticker"> בתוקף </div>
 
 let recentsSection = document.querySelector('#recents');
 jsonFile.mostPopular.forEach( cardtemplate => {
