@@ -23,60 +23,26 @@
             <h3>קיצורי דרך לעזרה</h3>
         </div>
         <section> <!---recent use-->
-            <div class="container"> </div>
             <header class="main-headers">
                 <p class="main-headers-txt">שומשו לאחרונה:</p>
                 <hr>
             </header>
-            <div class="row">
-                <div class="card"><div class="card-main"> <i class="material-icons">Dyn-ICON-here</i><div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"> <i class="material-icons">Dyn-ICON-here</i><div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"> <i class="material-icons">Dyn-ICON-here</i><div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"> <i class="material-icons">Dyn-ICON-here</i><div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"> <i class="material-icons">Dyn-ICON-here</i><div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"> <i class="material-icons">Dyn-ICON-here</i><div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"> <i class="material-icons">Dyn-ICON-here</i><div class="main-description">Dynamic-name</div></div></div>
-            </div>
-            </div>
+            <div class="row" id="recents"></div>
         </section>
         <section> <!---popular-->
             <header class="main-headers">
                 <p class="main-headers-txt">פופולארי / כללי:</p>
                 <hr>
             </header>
-            <div class="row">
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i><div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i><div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i><div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i><div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i><div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i><div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i><div class="main-description">Dynamic-name</div></div></div>
-            </div>
+            <div class="row" id="popular"></div>
         </section>
         <section> <!---recommended-->
             <header class="main-headers">
                 <p class="main-headers-txt">מומלץ:</p>
                 <hr>
             </header>
-            <div class="row">
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i> <div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i> <div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i> <div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i> <div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i> <div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i> <div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i> <div class="main-description">Dynamic-name</div></div></div>
-            </div>
-            <div class="row">
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i> <div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i> <div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i> <div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i> <div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i> <div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i> <div class="main-description">Dynamic-name</div></div></div>
-                <div class="card"><div class="card-main"><i class="material-icons">Dyn-ICON-here</i> <div class="main-description">Dynamic-name</div></div></div>
-            </div>
+            <div class="row" id="recommanded"></div>
+            <div class="row" id="recommanded"></div>
         </section> 
     </main>
 
@@ -84,5 +50,6 @@
         <p>מחפש משהו אחר?ניתן לבצע חיפוש...</p>
     </footer>
     <script src="./scripting.js"></script>
+    <script src="hafifaJSON.json"></script>
 </body>
 </html>
