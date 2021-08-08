@@ -12,8 +12,19 @@ for (indexer = 0; indexer < numList.length; indexer++)
 }
 / -------------------------------------------------------------------------- */
 
+// let dict = new Object();
+// console.log(jsonFile.mostPopular[0].type);
+// for (const [key, value] of Object.entries(jsonFile)){
+//     let tmpSection = `${key}`; // ---> console.log(typeof(tmpSection)); == String
+// }
+// Object.entries(jsonFile).forEach(([key, value]) => {
+//     console.log(key);
+// });
+
+// -----------------------------------------------------------------------------
+
 // let jsonData = JSON.parse(hafifaJSON);
-// import jsonFile from './hafifaJSON.json'; //(with path)
+// import jsonFile from './hafifaJSON.json';
 // console.log(jsonFile);
 
 var jsonFile = {"lastUsed": [
@@ -31,7 +42,7 @@ var jsonFile = {"lastUsed": [
 		},
 		{
 			"type": "plan",
-			"title": "קפלן לחץ"
+			"title": "לחץ"
 		},
 		{
 			"type": "digger",
@@ -43,7 +54,7 @@ var jsonFile = {"lastUsed": [
 		},
         {
 			"type": "plan",
-			"title": "קפלן לחץ"
+			"title": "'' לחץ"
 		}
 	],
 		"mostPopular": [
@@ -96,7 +107,8 @@ var jsonFile = {"lastUsed": [
 		{
 			"type": "atPlanPool",
 			"title": "מאגר פיו פיו ברבים"
-		},{
+		},
+        {
 			"type": "opRep",
 			"title": "דיווח מבצעי רצח"
 		},
@@ -115,7 +127,8 @@ var jsonFile = {"lastUsed": [
 		{
 			"type": "atPlanPool",
 			"title": "מאגר פיו פיו ברבים"
-		},{
+		},
+        {
 			"type": "opRep",
 			"title": "דיווח מבצעי רצח"
 		},
@@ -134,35 +147,36 @@ var jsonFile = {"lastUsed": [
 	]
 };
 
-let recentsSection = document.querySelector('#recents');
-jsonFile.mostPopular.forEach( cardtemplate => {
-    const content = `<div class="card">
-                        <i class="material-icons">ICON-here</i>
-                        <div class="main-description">
-                            ${cardtemplate.title}
-                        </div>
-                    </div>`;
-    recentsSection.innerHTML += content;
-});
+// runs for the jsonFile, for LastUsed, mostPopular, Recommanded --> 
+// runs again and builds the cards,
+// Gets Random --- 0 not isValid, 1 isValid Sticker
+// Getelementbyid is much faster and efficient
 
-let popularSection = document.querySelector('#popular');
-jsonFile.lastUsed.forEach( cardtemplate => {
-    const content = `<div class="card">
-                        <i class="material-icons">ICON-here</i>
-                        <div class="main-description">
-                            ${cardtemplate.title}
-                        </div>
-                    </div>`;
-    popularSection.innerHTML += content;
-});
-
-let recommandedSection = document.querySelector('#recommanded');
-jsonFile.recommanded.forEach( cardtemplate => {
-    const content = `<div class="card">
-                        <i class="material-icons">ICON-here</i>
-                        <div class="main-description">
-                            ${cardtemplate.title}
-                        </div>
-                    </div>`;
-    recommandedSection.innerHTML += content;
-});
+Object.keys(jsonFile).forEach(key => {
+    const tmpSection = jsonFile[key]; // Object of the section
+    const currentClass = key; // String of the section
+    tmpSection.forEach( card => {
+        let isValid = Math.round(Math.random()); // if (isValid)  {} else {}
+        let recentsSection = document.getElementById(`${currentClass}`);
+        if (isValid) { // With Sticker
+            const content = `<div class="card">
+                    <div class="sticker"> בתוקף </div>
+                    <i class="material-icons">ICON-here</i>
+                    <div class="main-description">
+                        ${card.title}
+                    </div>
+                </div>`;
+            recentsSection.innerHTML += content;
+        }
+        else // No Sticker
+        {
+        const content = `<div class="card">
+                <i class="material-icons">ICON-here</i>
+                <div class="main-description">
+                    ${card.title}
+                </div>
+            </div>`;
+        recentsSection.innerHTML += content;
+        }
+    });
+}); 

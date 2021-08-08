@@ -87,17 +87,6 @@ hr {
     flex-wrap: wrap;
 }
 
-/* .sticker { 
-    background-color: transparent;
-    border-style: solid;
-    border-color: darkred;
-    border-width: 3px;
-    color: darkred;
-    position: absolute;
-    font-weight: 450;
-    transform: rotate(-30deg);
-} */
-
 .card {
     background-color: #F0F0F0;
     width: 150px;
@@ -111,7 +100,21 @@ hr {
     padding: 15px 0;
 }
 
-.card::after {
+ .sticker { 
+    text-align: center;
+    background-color: transparent;
+    width: 3rem;
+    border-style: solid;
+    border-color: darkred;
+    border-width: medium;
+    color: darkred;
+    position: absolute;
+    transform: rotate(-30deg);
+    margin-left: -120px;
+    margin-top: -58px;
+}
+
+/* .card::after {
     content: 'בתוקף'; 
     padding: 0.5rem;
     width: 4rem;
@@ -123,7 +126,7 @@ hr {
     text-align: center;
     transform: rotate(-30deg);
     align-self: flex-start;
-}
+} */
 
 .material-icons {
     font-size: 14px;
