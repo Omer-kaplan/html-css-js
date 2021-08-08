@@ -140,6 +140,18 @@ hr {
     text-align: center;
 }
 
+/* .three-dots {
+    width: 30px;
+    height: 50px;
+ }
+.three-dots::after {
+    content: '\2807';
+    position: absolute;
+    font-size: 28px;
+    color: black;
+    margin-top: -10px; 
+} */
+
 #grid-elements {
     display: grid;
 }

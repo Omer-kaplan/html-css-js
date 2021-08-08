@@ -3,30 +3,7 @@
 let listSimple = ['omer', 'Kaplan', 'infraDev', 'Adri', 'Mor'];
 // console.log(listSimple[0]) == omer
 listSimple.push('hahaLOL');
-
-let numList = [1,2,3,4,5,6];
-let indexer;
-for (indexer = 0; indexer < numList.length; indexer++)
-{
-    console.log('The position is --> ' + indexer + ' Value ' + numList[indexer]);
-}
 / -------------------------------------------------------------------------- */
-
-// let dict = new Object();
-// console.log(jsonFile.mostPopular[0].type);
-// for (const [key, value] of Object.entries(jsonFile)){
-//     let tmpSection = `${key}`; // ---> console.log(typeof(tmpSection)); == String
-// }
-// Object.entries(jsonFile).forEach(([key, value]) => {
-//     console.log(key);
-// });
-
-// -----------------------------------------------------------------------------
-
-// let jsonData = JSON.parse(hafifaJSON);
-// import jsonFile from './hafifaJSON.json';
-// console.log(jsonFile);
-
 var jsonFile = {"lastUsed": [
 		{
 			"type": "plan",
@@ -54,7 +31,7 @@ var jsonFile = {"lastUsed": [
 		},
         {
 			"type": "plan",
-			"title": "'' לחץ"
+			"title": "לחץ"
 		}
 	],
 		"mostPopular": [
@@ -147,6 +124,8 @@ var jsonFile = {"lastUsed": [
 	]
 };
 
+// Dictionary 3 opt: 1-recent 2-popular 3-recommand.
+// foreach json key ---> fits right text between tags
 // runs for the jsonFile, for LastUsed, mostPopular, Recommanded --> 
 // runs again and builds the cards,
 // Gets Random --- 0 not isValid, 1 isValid Sticker
@@ -155,11 +134,20 @@ var jsonFile = {"lastUsed": [
 Object.keys(jsonFile).forEach(key => {
     const tmpSection = jsonFile[key]; // Object of the section
     const currentClass = key; // String of the section
+
+    // let section = document.getElementById(`${currentClass}`);
+    // const data = `<header class="main-headers">
+    //     <p class="main-headers-txt">${dictionary}</p>
+    //     <hr>
+    //     </header>
+    // section.innerHTML += data;  רוצה לעטוף גם סקשן וגם דיב יחד ולהחזיר אובייקט אחד, יודע בשניים כרגע
+
     tmpSection.forEach( card => {
-        let isValid = Math.round(Math.random()); // if (isValid)  {} else {}
+        let isValid = Math.round(Math.random()); // is valid 1 or not 0;
         let recentsSection = document.getElementById(`${currentClass}`);
         if (isValid) { // With Sticker
             const content = `<div class="card">
+                    <div class="three-dots"></div>
                     <div class="sticker"> בתוקף </div>
                     <i class="material-icons">ICON-here</i>
                     <div class="main-description">
@@ -168,9 +156,10 @@ Object.keys(jsonFile).forEach(key => {
                 </div>`;
             recentsSection.innerHTML += content;
         }
-        else // No Sticker
+        else // Without Sticker
         {
         const content = `<div class="card">
+                <div class="three-dots"></div>
                 <i class="material-icons">ICON-here</i>
                 <div class="main-description">
                     ${card.title}
