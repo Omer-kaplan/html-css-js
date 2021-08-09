@@ -1,4 +1,4 @@
-{
+export const jsonData = {
 	"lastUsed": [
 		{
 			"type": "plan",
@@ -117,4 +117,4 @@
 			"title": "מאגר נוסף"
 		}
 	]
-}
+};

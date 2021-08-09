@@ -7,8 +7,6 @@
 
 body {
     background-color: #a9a9a9;
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 main {
@@ -20,23 +18,11 @@ html {
     height: 100vh;
 }
 
-p {
-    white-space: pre;
-}
-
-ul {
-    padding: 0;
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 footer {
     padding-right: 24px;
     padding-bottom: 32px;
+    padding-top: 24px;
     font-size: smaller;
-    bottom: 0;
 }
 
 hr {
@@ -69,14 +55,6 @@ hr {
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-
-.new {
-    display: grid;
-    grid-template-columns: repeat(7, 2fr);
-    grid-template-rows: 2fr;
-    grid-column-gap: px;
-    grid-row-gap: 0px;
 }
 
 .row {
@@ -112,21 +90,7 @@ hr {
     transform: rotate(-30deg);
     margin-left: -120px;
     margin-top: -58px;
-}
-
-/* .card::after {
-    content: 'בתוקף'; 
-    padding: 0.5rem;
-    width: 4rem;
-    background-color: transparent;
-    color: darkred;
-    border-style: solid;
-    border-color: darkred;
-    border-width: thick;
-    text-align: center;
-    transform: rotate(-30deg);
-    align-self: flex-start;
-} */
+ }
 
 .material-icons {
     font-size: 14px;
@@ -152,16 +116,11 @@ hr {
     margin-top: -10px; 
 } */
 
-#grid-elements {
-    display: grid;
-}
-
 #nav-bar-main {
     display: flex;
 }
 
 #big-title {
     padding: 3px;
-    width: 90px;
     margin-top: 2px;
 }
