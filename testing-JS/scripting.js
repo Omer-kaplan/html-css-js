@@ -131,20 +131,37 @@ var jsonFile = {"lastUsed": [
 // Gets Random --- 0 not isValid, 1 isValid Sticker
 // Getelementbyid is much faster and efficient
 
+let dict = [];
+dict.push({
+    key: "lastUsed",
+    value: "שומשו לאחרונה:"
+});
+dict.push({
+    key: "mostPopular",
+    value: "פופולארי / כללי:"
+});
+dict.push({
+    key: "recommanded",
+    value: "מומלץ:"
+});
+
+let count = 0;
 Object.keys(jsonFile).forEach(key => {
     const tmpSection = jsonFile[key]; // Object of the section
-    const currentClass = key; // String of the section
+    const currentID = key; // String of the section
+    let section = document.getElementById(`${currentID}`);
+    let currentText = dict[count].value; // let tmpTitleText = dict.`${currentID}`.value; ToTry
 
-    // let section = document.getElementById(`${currentClass}`);
-    // const data = `<header class="main-headers">
-    //     <p class="main-headers-txt">${dictionary}</p>
-    //     <hr>
-    //     </header>
-    // section.innerHTML += data;  רוצה לעטוף גם סקשן וגם דיב יחד ולהחזיר אובייקט אחד, יודע בשניים כרגע
+    const data = `<header class="main-headers">
+        <p class="main-headers-txt">${currentText}</p>
+        <hr>
+        </header>
+        <div class="row" id="${currentID}Div"></div>`
+    section.innerHTML += data;
 
     tmpSection.forEach( card => {
         let isValid = Math.round(Math.random()); // is valid 1 or not 0;
-        let recentsSection = document.getElementById(`${currentClass}`);
+        let recentsSection = document.getElementById(`${currentID}Div`);
         if (isValid) { // With Sticker
             const content = `<div class="card">
                     <div class="three-dots"></div>
@@ -168,4 +185,37 @@ Object.keys(jsonFile).forEach(key => {
         recentsSection.innerHTML += content;
         }
     });
-}); 
+    count++;
+});
+
+// LAST VERSION
+// Object.keys(jsonFile).forEach(key => {
+//     const tmpSection = jsonFile[key]; // Object of the section
+//     const currentClass = key; // String of the section
+//     tmpSection.forEach( card => {
+//         let isValid = Math.round(Math.random()); // is valid 1 or not 0;
+//         let recentsSection = document.getElementById(`${currentClass}`);
+//         if (isValid) { // With Sticker
+//             const content = `<div class="card">
+//                     <div class="three-dots"></div>
+//                     <div class="sticker"> בתוקף </div>
+//                     <i class="material-icons">ICON-here</i>
+//                     <div class="main-description">
+//                         ${card.title}
+//                     </div>
+//                 </div>`;
+//             recentsSection.innerHTML += content;
+//         }
+//         else // Without Sticker
+//         {
+//         const content = `<div class="card">
+//                 <div class="three-dots"></div>
+//                 <i class="material-icons">ICON-here</i>
+//                 <div class="main-description">
+//                     ${card.title}
+//                 </div>
+//             </div>`;
+//         recentsSection.innerHTML += content;
+//         }
+//     });
+// });
