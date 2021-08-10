@@ -1,7 +1,7 @@
 import { jsonData } from "./dataJson.js";
 import { cardExtraStyles } from "./dictionary.js";
 
-let dict = {
+const dict = {
   lastUsed: "שומשו לאחרונה:",
   mostPopular: "פופולארי / כללי:",
   recommanded: "מומלץ:",
@@ -12,7 +12,7 @@ let iconPath;
 
 Object.keys(jsonData).forEach((key) => {
   const cardAtributes = jsonData[key];
-  let section = document.getElementById(`sections`);
+  const section = document.getElementById(`sections`);
   const data = `<section id="${key}">
             <header class="main-headers">
             <p class="main-headers-txt">${dict[key]}</p>
@@ -21,7 +21,7 @@ Object.keys(jsonData).forEach((key) => {
             <div class="row">
                 ${cardAtributes
                   .map((card) => {
-                    let typeName = card.type;
+                    const typeName = card.type;
                     isValid = cardExtraStyles[typeName]["isvalid"];
                     isOption = cardExtraStyles[typeName]["options"];
                     iconPath = cardExtraStyles[typeName]["icon"];
