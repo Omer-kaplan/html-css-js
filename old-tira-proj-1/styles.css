@@ -1,0 +1,85 @@
+* {
+    direction: rtl;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: whitesmoke;
+    margin: 0;
+}
+body {
+    background-color: #a9a9a9;
+    background-size: cover;
+    background-attachment: fixed;
+}
+html {
+    height: 100vh;
+}
+p {
+    white-space: pre;
+}
+.subtitle {
+    padding-right: 24px;
+    padding-top: 6px;
+    padding-bottom: 9px;
+}
+.tira-img {
+    height: 48px;
+    width: 48px;
+    padding: 7px;
+}
+.topnavbar {
+    background-color: #20333c;
+}
+#navbarmain {
+    display: flex;
+}
+#bigtitle {
+    padding: 3px;
+    width: 90px;
+    margin-top: 2px;
+ }
+.main-headers {
+    font: 'Segoe UI';
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.main-headers div{
+    display: flex;
+    width: 100%;
+    height: 3px;
+    background: lightgray;
+    margin-right: 24px;
+    margin-top: 3px;
+}
+ul{
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.new {
+display: grid;
+grid-template-columns: repeat(7, 2fr);
+grid-template-rows: 2fr;
+grid-column-gap: px;
+grid-row-gap: 0px;
+
+}
+/* .main-headers-txt::after {
+    display: inline-flex;
+    content: "";
+    height: 4px;
+    background: lightgray;
+    width: 82%;
+    top: 50%;
+    margin-right: 10px;
+    justify-content: space-between;
+} */
+#footer-style {
+    padding-right: 24px;
+    padding-bottom: 32px;
+    font-size: smaller;
+    position:absolute;
+    bottom:0;
+}
