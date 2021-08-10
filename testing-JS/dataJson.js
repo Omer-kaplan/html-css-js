@@ -1,120 +1,120 @@
 export const jsonData = {
-	"lastUsed": [
+	'lastUsed': [
 		{
-			"type": "plan",
-			"title": "בדיקות מרשם"
+			'type': 'plan',
+			'title': 'בדיקות מרשם'
 		},
 		{
-			"type": "pool",
-			"title": "מאגר"
+			'type': 'pool',
+			'title': 'מאגר'
 		},
 		{
-			"type": "digger",
-			"title": "דיגר עמר"
+			'type': 'digger',
+			'title': 'דיגר עמר'
 		},
 		{
-			"type": "plan",
-			"title": "לחץ"
+			'type': 'plan',
+			'title': 'לחץ'
 		},
 		{
-			"type": "digger",
-			"title": "דיגדיגר"
+			'type': 'digger',
+			'title': 'דיגדיגר'
 		},
 		{
-			"type": "atPlan",
-			"title": "בד.תכנון"
+			'type': 'atPlan',
+			'title': 'בד.תכנון'
 		},
         {
-			"type": "plan",
-			"title": "לחץ"
+			'type': 'plan',
+			'title': 'לחץ'
 		}
 	],
-		"mostPopular": [
+		'mostPopular': [
 		{
-			"type": "sys",
-			"title": "קבוע מערכתי"
+			'type': 'sys',
+			'title': 'קבוע מערכתי'
 		},
 		{
-			"type": "disc",
-			"title": "מור בדיקה"
+			'type': 'disc',
+			'title': 'מור בדיקה'
 		},
 		{
-			"type": "office",
-			"title": "בדיקת OFFICE"
+			'type': 'office',
+			'title': 'בדיקת OFFICE'
 		},
 		{
-			"type": "sys",
-			"title": "ניהול בקשות"
+			'type': 'sys',
+			'title': 'ניהול בקשות'
 		},
         {
-			"type": "disc",
-			"title": "מור בדיקה"
+			'type': 'disc',
+			'title': 'מור בדיקה'
 		},
 		{
-			"type": "office",
-			"title": "בדיקת OFFICE"
+			'type': 'office',
+			'title': 'בדיקת OFFICE'
 		},
 		{
-			"type": "plan",
-			"title": "שירה בדיקה"
+			'type': 'plan',
+			'title': 'שירה בדיקה'
 		}
 	],
-		"recommanded": [
+		'recommanded': [
 		{
-			"type": "opRep",
-			"title": "דיווח מבצעי רצח"
+			'type': 'opRep',
+			'title': 'דיווח מבצעי רצח'
 		},
 		{
-			"type": "ldr",
-			"title": "בום בום ופיו פיו"
+			'type': 'ldr',
+			'title': 'בום בום ופיו פיו'
 		},
 		{
-			"type": "discMgmt",
-			"title": "מאגר דיונים ותומכל"
+			'type': 'discMgmt',
+			'title': 'מאגר דיונים ותומכל'
 		},
 		{
-			"type": "pool",
-			"title": "מאגר נוסף"
+			'type': 'pool',
+			'title': 'מאגר נוסף'
 		},
 		{
-			"type": "atPlanPool",
-			"title": "מאגר פיו פיו ברבים"
+			'type': 'atPlanPool',
+			'title': 'מאגר פיו פיו ברבים'
 		},
         {
-			"type": "opRep",
-			"title": "דיווח מבצעי רצח"
+			'type': 'opRep',
+			'title': 'דיווח מבצעי רצח'
 		},
 		{
-			"type": "ldr",
-			"title": "בום בום ופיו פיו"
+			'type': 'ldr',
+			'title': 'בום בום ופיו פיו'
 		},
 		{
-			"type": "discMgmt",
-			"title": "מאגר דיונים ותומכל"
+			'type': 'discMgmt',
+			'title': 'מאגר דיונים ותומכל'
 		},
 		{
-			"type": "pool",
-			"title": "מאגר נוסף"
+			'type': 'pool',
+			'title': 'מאגר נוסף'
 		},
 		{
-			"type": "atPlanPool",
-			"title": "מאגר פיו פיו ברבים"
+			'type': 'atPlanPool',
+			'title': 'מאגר פיו פיו ברבים'
 		},
         {
-			"type": "opRep",
-			"title": "דיווח מבצעי רצח"
+			'type': 'opRep',
+			'title': 'דיווח מבצעי רצח'
 		},
 		{
-			"type": "ldr",
-			"title": "בום בום ופיו פיו"
+			'type': 'ldr',
+			'title': 'בום בום ופיו פיו'
 		},
 		{
-			"type": "discMgmt",
-			"title": "מאגר דיונים ותומכל"
+			'type': 'discMgmt',
+			'title': 'מאגר דיונים ותומכל'
 		},
 		{
-			"type": "pool",
-			"title": "מאגר נוסף"
+			'type': 'pool',
+			'title': 'מאגר נוסף'
 		}
 	]
 };

@@ -1,4 +1,5 @@
 import {jsonData} from './dataJson.js';
+import {isButtons} from './dictionary.js';
 
 let dict = {
     'lastUsed' : 'שומשו לאחרונה:', 
@@ -6,7 +7,11 @@ let dict = {
     'recommanded' : 'מומלץ:'
  }
 
-Object.keys(jsonData).forEach(key => {
+let isValid;
+let isOption;
+let iconPath;
+
+ Object.keys(jsonData).forEach(key => {
     const cardAtributes = jsonData[key];   // Object of the section
     let section = document.getElementById(`${key}`);
     const data = `<header class="main-headers">
@@ -16,16 +21,24 @@ Object.keys(jsonData).forEach(key => {
         <div class="row" id="${key}Div"></div>`
     section.innerHTML += data;
     cardAtributes.forEach( card => {
-        let isValid = Math.round(Math.random()); // is valid 1 or not 0;
         let recentsSection = document.getElementById(`${key}Div`);
-            const content = `<div class="card">
-                    <div class="three-dots"></div>
-                    ${isValid ? '<div class="sticker"> בתוקף </div>' : ''}
-                    <i class="material-icons">ICON-here</i>
-                    <div class="main-description">
-                        ${card.title}
-                    </div>
-                </div>`;
-            recentsSection.innerHTML += content;
+        let typeName = card.type;
+        Object.keys(isButtons).forEach(k => {
+            let atr = isButtons[k];
+            if (typeName === k) {
+                isValid = atr['isvalid'];
+                isOption = atr['options'];
+                iconPath = atr['icon'];
+            }
+        });
+        const content = `<div class="card">
+                ${isValid ? '<div class="sticker"> בתוקף </div>' : ''}
+                ${isOption ? '<div class="three-dots"></div>' : ''}
+                <img src="${iconPath}" alt="relev.icon" class="material-icons"></i>
+                <div class="main-description">
+                    ${card.title}
+                </div>
+            </div>`;
+        recentsSection.innerHTML += content;
     });
 });

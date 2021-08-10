@@ -19,24 +19,23 @@ html {
 }
 
 footer {
-    padding-right: 24px;
-    padding-bottom: 32px;
-    padding-top: 24px;
-    font-size: smaller;
+    padding: 24px 24px 32px 0;
+    font-size: 14px;
 }
 
 hr {
     flex-grow: 1;
-    margin-right: 28px;
-    margin-top: 4px;
+    margin: 4px 28px 0 0;
     background-color: whitesmoke;
     height: 1px;
 }
 
+.nav-bar-main {
+    display: flex;
+}
+
 .subtitle {
-    padding-right: 24px;
-    padding-top: 6px;
-    padding-bottom: 9px;
+    padding: 6px 24px 9px 0;
 }
 
 .tira-img {
@@ -81,21 +80,20 @@ hr {
  .sticker { 
     text-align: center;
     background-color: transparent;
-    width: 3rem;
-    border-style: solid;
-    border-color: darkred;
-    border-width: medium;
+    width: 49px;
+    border: medium solid darkred;
     color: darkred;
     position: absolute;
-    transform: rotate(-30deg);
-    margin-left: -120px;
-    margin-top: -58px;
+    transform: rotate(330deg);
+    margin: 0 120px 58px 0;
  }
 
 .material-icons {
-    font-size: 14px;
+    font-size: 12px;
     color: black;
     margin-bottom: 5px;
+    height: 30px;
+    width: 30px;
 }
 
 .main-description {
@@ -104,20 +102,18 @@ hr {
     text-align: center;
 }
 
-/* .three-dots {
-    width: 30px;
-    height: 50px;
+.three-dots {
+    width: 20px;
+    height: 28px;
+    padding: 2px;
+    margin: -10px 110px 10px 0;
+    display: flex;
  }
 .three-dots::after {
     content: '\2807';
     position: absolute;
-    font-size: 28px;
-    color: black;
-    margin-top: -10px; 
-} */
-
-#nav-bar-main {
-    display: flex;
+    font-size: 25px;
+    color: #737373;
 }
 
 #big-title {
