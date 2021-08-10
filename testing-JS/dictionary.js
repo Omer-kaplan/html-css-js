@@ -1,70 +1,70 @@
-export const isButtons = {
+export const cardExtraStyles = {
 	'plan': {
-			'isvalid': 0,
-            'options': 1,
-            'icon': './icons/data-cloud.png'
+			'isvalid': false,
+      'options': true,
+      'icon': './icons/data-cloud.png'
 		},
     'digger': {
-			'isvalid': 1,
-            'options': 0,
-            'icon': './icons/dev-computer.png'
+			'isvalid': true,
+      'options': false,
+      'icon': './icons/dev-computer.png'
 	    },
     'pool': {
-			'isvalid': 0,
-            'options': 1,
-            'icon': './icons/rocket.png'
+			'isvalid': false,
+      'options': true,
+      'icon': './icons/rocket.png'
 		},
 	'atPlan': {
-			'isvalid': 0,
-            'options': 1,
-            'icon': './icons/error-404.png'
+			'isvalid': false,
+      'options': true,
+      'icon': './icons/error-404.png'
 		},
     'sys': 
 		{
-			'isvalid': 1,
-            'options': 0,
-            'icon': './icons/holding-earth.png'
+			'isvalid': true,
+      'options': false,
+      'icon': './icons/holding-earth.png'
 		},
     'atPlanPool': 
 		{
-			'isvalid': 0,
-            'options': 1,
-            'icon': './icons/gift.png'
+			'isvalid': true,
+      'options': false,
+      'icon': './icons/gift.png'
 		},
     'pool': 
 		{
-			'isvalid': 0,
-            'options': 0,
-            'icon': './icons/www.png'
+			'isvalid': false,
+      'options': true,
+      'icon': './icons/www.png'
 		},
     'discMgmt': 
 		{
-			'isvalid': 1,
-            'options': 0,
-            'icon': './icons/money-magnet.png'
+			'isvalid': true,
+      'options': false,
+      'icon': './icons/money-magnet.png'
 		},
     'ldr': 
 		{
-			'isvalid': 0,
-            'options': 1,
-            'icon': './icons/shop-cart.png'
+			'isvalid': false,
+      'options': true,
+      'icon': './icons/shop-cart.png'
 		},
     'opRep': 
 		{
-			'isvalid': 0,
-            'options': 1,
-            'icon': './icons/court.png'
+			'isvalid': false,
+      'options': true,
+      'icon': './icons/court.png'
 		},
     'office': 
 		{
-			'isvalid': 1,
-            'options': 0,
-            'icon': './icons/team-work.png'
+			'isvalid': true,
+      'options': false,
+      'icon': './icons/team-work.png'
 		},
     'disc': 
 		{
-			'isvalid': 0,
-            'options': 1,
-            'icon': './icons/dollar-bil.png'
+			'isvalid': false,
+      'options': true,
+      'icon': './icons/dollar-bil.png'
 		}
 };

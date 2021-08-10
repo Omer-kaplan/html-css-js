@@ -1,35 +1,31 @@
 <!DOCTYPE html>
 <html lang="he">
-<head>
-    <meta charset="UTF-8">
-    <title>Omer Mini Tira</title> 
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./icons/tab-castle.png">
-</head>
-<body>
-    <header class="top-nav-bar"> <!--- NavBar --->
-        <nav class="nav-bar-main">
-            <img class="tira-img" src="./icons/navbar-icon.png" alt="Castle ICON" />
-            <div id="big-title">
-                <h1>הטירה</h1>
-                <h5>מציאות אחת</h5>
-            </div>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Omer Mini Tira</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="./icons/tab-castle.png" />
+  </head>
+  <body>
+    <header class="top-nav-bar">
+      <nav class="nav-bar-main">
+        <img class="tira-img" src="./icons/navbar-icon.png" alt="Castle ICON" />
+        <div class="big-title">
+          <h1>הטירה</h1>
+          <h5>מציאות אחת</h5>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="subtitle">
-            <h1>שולחן העבודה</h1>
-            <h3>קיצורי דרך לעזרה</h3>
-        </div>
-        <section id="lastUsed"></section>       <!-- recent use --->
-        <section id="mostPopular"></section>    <!--most popular--->
-        <section id="recommanded"></section>    <!--Recommanded --->
+      <div class="subtitle">
+        <h1>שולחן העבודה</h1>
+        <h3>קיצורי דרך לעזרה</h3>
+      </div>
+      <div id="sections"></div>
     </main>
-    <footer> 
-        <p> מחפש משהו אחר? ניתן לבצע חיפוש...</p>
-    </footer>
+    <footer><p>מחפש משהו אחר? ניתן לבצע חיפוש...</p></footer>
     <script type="module" src="./scripting.js"></script>
     <script type="text/javascript" src="hafifaJSON.json"></script>
     <script type="module" src="./dataJson.js"></script>
-</body>
+  </body>
 </html>
